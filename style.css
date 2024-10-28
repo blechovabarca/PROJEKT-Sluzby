@@ -1,0 +1,117 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.hlavniobrazek {
+    margin-top: 60px;
+    margin-bottom:40px;
+    margin-left: 75px;
+    margin-right:75px;
+}
+
+body {
+    background-color: #FAFAFA ;
+    text-align:  center;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top:0;
+}
+
+.cara {
+    width: 60px;
+    height: 2px;
+    background-color:#407BFF;
+    border: none;
+    margin-bottom: 40px;
+}
+
+
+h2 {
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    margin-top:40px;
+}
+
+.odstavec {
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: 300;
+    color: #8B8B8B;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding:0;
+}
+
+.tlacitko1 {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color:white;
+    background-color: #407BFF;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.tlacitko2 {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color:white;
+    background-color: #8B8B8B;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-left: 140px;
+    margin-right: 140px;
+
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink:1;
+    flex-basis: auto;
+}
+
+
+.item1, .item2, .item3, .item4, .item5, .item6 {
+    display: inline-flex;
+    background-color: white;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    color: #8B8B8B;
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-left:20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ikona {
+    margin: 20px 20px 20px 10px;
+}
+
+.popisek {
+    margin-left:10px;
+    margin-right:20px;
+    padding:0;
+}
