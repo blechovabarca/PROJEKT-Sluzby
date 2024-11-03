@@ -3,16 +3,26 @@
     box-sizing: border-box;
 }
 
+
+
 .hlavniobrazek {
     margin-top: 60px;
     margin-bottom:40px;
     margin-left: 75px;
     margin-right:75px;
+    max-width: 100vw;
 }
 
+
+.uvodnipanel {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
 body {
     background-color: #FAFAFA ;
     text-align:  center;
+    margin: 0;
 }
 
 h1 {
@@ -21,6 +31,7 @@ h1 {
     font-weight: 500;
     margin-bottom: 10px;
     margin-top:0;
+    text-align: center;
 }
 
 .cara {
@@ -44,54 +55,37 @@ h2 {
     font-family: "Montserrat";
     font-weight: 300;
     color: #8B8B8B;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 20px;
-}
+    }
 
-ul {
-    padding:0;
-}
-
-.tlacitko1 {
+.prvni {
     font-size: 14px;
     font-family: "Montserrat";
     color:white;
     background-color: #407BFF;
     border-radius: 20px;
     padding: 10px 30px;
-    margin-bottom: 10px;
-    margin-left: 150px;
-    margin-right: 150px;
+    width: 195px;
+    max-width: 100vw;
+    margin: 10px auto;
+
 }
 
-.tlacitko2 {
+.druhe {
     font-size: 14px;
     font-family: "Montserrat";
     color:white;
     background-color: #8B8B8B;
     border-radius: 20px;
     padding: 10px 30px;
-    margin-left: 140px;
-    margin-right: 140px;
-
+    width: 230px;
+    max-width: 100%;
+    margin: 10px auto;
 }
 
-.container1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.container2 {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 0;
-    flex-shrink:1;
-    flex-basis: auto;
-}
-
-
-.item1, .item2, .item3, .item4, .item5, .item6 {
+.item {
     display: inline-flex;
     background-color: white;
     box-shadow: 0px 4px 6px #407BFF1F;
@@ -104,6 +98,9 @@ ul {
     margin-right: 20px;
     justify-content: center;
     align-items: center;
+    width: 460px;
+    max-width: 100vw;
+    border-radius: 10px;
 }
 
 .ikona {
@@ -115,3 +112,145 @@ ul {
     margin-right:20px;
     padding:0;
 }
+
+/*Změny pro tabletovou verzi*/
+@media screen  and (min-width: 640px) {
+
+    .container {
+        display: flex;
+        flex-basis: 230px;
+    }
+
+    .prvni {
+        margin-right:10px;
+    }
+    .druhe {
+        margin-left: 10px;
+    }
+
+    .ikona {
+        width:45px;
+        height: 40px;
+        margin-bottom:20px;
+        margin-top: 40px;
+        padding: 0 0;
+    }
+    .popisek {
+        margin-top: 0px;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        margin:10px 10px;
+    }
+
+    .hlavniobrazek {
+        width: 400px;
+        height: 330px;
+    }
+
+    .odstavec {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+
+/*Změny pro desktop verzi*/
+@media screen  and (min-width: 1100px) {
+    .prvnitretina{
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .hlavniobrazek {
+        order: 1;
+    }
+
+    .druhatretina {
+        display: flex;
+        margin-top: 80px;
+        align-items: center;
+    }
+
+    .tretitretina {
+        display: flex;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        align-items: center;
+    }
+
+    .kancelar {
+        width: 550px;
+        justify-content: space-between;
+    }
+
+    .uvodnitextkancelar {
+        width: 450px;
+        text-align: left;
+        padding-left: 0;
+        order: 1;
+        margin-left: 60px;
+    }
+
+    .sluzby {
+        width: 550px;
+        justify-content: space-between;
+    }
+
+    .uvodnitextsluzby {
+        width: 450px;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 60px;
+    }
+
+    .okno {
+        display: block;
+        padding-left: 70px;
+        padding-right: 70px;
+
+    }
+    .uvodnipanel {
+        text-align:start;
+        padding-top: 120px;
+        width: 490px;
+    }
+
+    .cara {
+        margin-left: 0px;
+    }
+
+    .odstavec {
+        padding-left: 0px;
+        margin-left: 0;
+        margin-right:0;
+    }
+
+    .prvni {
+        margin-left: 0;
+    }
+
+    .hlavniobrazek {
+        max-width: 425px;
+        height: auto;
+        margin-bottom: 0;
+        margin-left: 160px;
+    }
+
+    .popisek {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+
+h1 {
+    text-align: left;
+}
+   }
+
+
+
