@@ -9,6 +9,7 @@ body {
     margin: 0;
 }
 
+/*Základní verze do 640px*/
 .okno {
     max-width: 100%;
     padding-left: 1.2rem;
@@ -55,8 +56,13 @@ h2 {
     margin-bottom: 20px; 
     }
 
-
-
+.tlacitka {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    align-items: center;
+}
+    
 .prvni {
     font-size: 0.9rem;
     font-family: "Montserrat";
@@ -68,13 +74,6 @@ h2 {
     max-width: 100%;
     margin-bottom: 0.8rem;
 }
-
-.tlacitka {
-    display: flex;
-    flex-direction: column;
-    flex-basis: auto;
-}
-
 
 .druhe {
     font-size: 0.9rem;
@@ -104,40 +103,31 @@ h2 {
     border-radius: 10px;
 }
 
-
-
 /*Změny nad šířku 420px*/
-
 @media screen  and (min-width: 420px) {
-.item {
-    flex-direction: row;
+    .item {
+        flex-direction: row;
+    }
+
+    .ikona {
+        margin-right: 1rem;
+    }
 }
-
-.ikona {
-    margin-right: 1rem;
-}
-
-
-
-}
-
 
 /*Změny pro tabletovou verzi*/
 @media screen  and (min-width: 640px) {
 
-    .tlacitka {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
     .container {
         display: flex;
+    }
 
+    .tlacitka {
+        flex-direction: row;
+        justify-content: center;
     }
 
     .druhe {
         margin-left: 10px;
-
     }
 
     .ikona {
@@ -147,9 +137,11 @@ h2 {
         margin-top: 40px;
         padding: 0 0;
     }
+
     .popisek {
         margin-top: 0px;
     }
+
     .item {
         display: flex;
         flex-direction: column;
@@ -173,10 +165,26 @@ h2 {
 
 /*Změny pro desktop verzi*/
 @media screen  and (min-width: 1100px) {
-    
+
+    .okno {
+        display: block;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
     .prvnitretina{
         display: flex;
         margin-bottom: 0;
+    }
+
+    .uvodnipanel {
+        text-align:start;
+        padding-top: 120px;
+        width: 490px;
     }
 
     .tlacitka {
@@ -185,6 +193,10 @@ h2 {
 
     .hlavniobrazek {
         order: 1;
+        max-width: 425px;
+        height: auto;
+        margin-bottom: 0;
+        margin-left: 160px;
     }
 
     .druhatretina {
@@ -213,24 +225,11 @@ h2 {
         margin-left: 60px;
     }
 
-
     .uvodnitextsluzby {
         width: 450px;
         text-align: left;
         margin-left: 0;
         margin-right: 60px;
-    }
-
-    .okno {
-        display: block;
-        padding-left: 70px;
-        padding-right: 70px;
-
-    }
-    .uvodnipanel {
-        text-align:start;
-        padding-top: 120px;
-        width: 490px;
     }
 
     .cara {
@@ -247,13 +246,6 @@ h2 {
         margin-left: 0;
     }
 
-    .hlavniobrazek {
-        max-width: 425px;
-        height: auto;
-        margin-bottom: 0;
-        margin-left: 160px;
-    }
-
     .popisek {
         margin-left: 2px;
         margin-right: 2px;
@@ -263,11 +255,6 @@ h2 {
         margin-right: 1rem;
         margin-left: 1rem;
     }
-
-
-h1 {
-    text-align: left;
-}
    }
 
 
